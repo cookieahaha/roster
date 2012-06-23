@@ -2,7 +2,8 @@
 package me.kukkii.roster;
 
 import java.util.Scanner;
-import me.kukkii.roster.array.Roster;
+//import me.kukkii.roster.array.Roster;
+import me.kukkii.roster.linkedlist.Roster;
 
 // Copperopolis Chili Beans's roster UI
 public class UI {
