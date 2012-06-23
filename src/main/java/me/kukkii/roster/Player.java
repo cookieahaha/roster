@@ -1,7 +1,7 @@
-// $Id$
+//$Id$
 package me.kukkii.roster;
 
-public class Player {
+public class Player implements java.io.Serializable, Comparable<Player>{
 	
 	private ShortName name;
 	private String number;
@@ -55,5 +55,9 @@ public class Player {
 		System.out.println("name: " + name.getFirst() + " " + name.getLast() + " " + "number: " + number + " " + "position: " + position + " " + "batting average: " + battingAverage + "% " + "hometown: " + hometown + " " + "high school: " + highSchool);
 	}
 	
+	// compares player's last name
+	public int compareTo(Player player){
+		return this.getName().getLast().compareTo(player.getName().getLast());
+	}
+	
 }
-
