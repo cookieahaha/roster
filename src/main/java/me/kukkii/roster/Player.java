@@ -1,7 +1,7 @@
 //$Id$
 package me.kukkii.roster;
 
-public class Player implements java.io.Serializable, Comparable<Player>{
+public class Player implements java.io.Serializable, Comparable<Player> {
 	
 	private ShortName name;
 	private String number;
@@ -58,6 +58,11 @@ public class Player implements java.io.Serializable, Comparable<Player>{
 	// compares player's last name
 	public int compareTo(Player player){
 		return this.getName().getLast().compareTo(player.getName().getLast());
+	}
+	
+	// compares player's last name
+	public int compareTo(String lastname){
+		return this.getName().getLast().compareTo(lastname);
 	}
 	
 }
